@@ -19,10 +19,16 @@ class TzLogger
     #successIcon = "😃";
     #successPreText = "执行成功日志：";
 
+    // 信息配置
     #infoTextColor = "34";
     #infoBgColor = "44";
     #infoIcon = "🙂";
     #infoPreText = "执行信息日志：";
+
+    getTimestamp()
+    {
+        return new Date().toLocaleString();
+    }
 
     // 柯里化定义logger
     loggerDefine(bgColor)
@@ -35,7 +41,7 @@ class TzLogger
                 {
                     return function log(text)
                     {
-                        console.log(icon, `\x1b[${bgColor}m${preText}\x1b[0m`, `\x1b[${textColor}m${text || "未输入日志内容"}\x1b[0m`);
+                        console.log(icon, `\x1b[${bgColor}m${preText}\x1b[0m`, `\x1b[${textColor}m${text || "未输入日志内容"}\x1b[0m`, `[${this.getTimestamp()}]`);
                     };
                 };
             };

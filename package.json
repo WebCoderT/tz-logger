@@ -16,7 +16,8 @@
   "repository": "https://github.com/WebCoderT/tz-logger",
   "type": "module",
   "files": [
-    "src"
+    "src",
+    "assets"
   ],
   "scripts": {
     "build": "vite build",
