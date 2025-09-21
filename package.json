@@ -11,13 +11,12 @@
   ],
   "license": "ISC",
   "author": "zheng",
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.cjs",
+  "main": "src/index.js",
   "private": false,
   "repository": "https://github.com/WebCoderT/tz-logger",
+  "type": "module",
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "build": "vite build",

@@ -1,6 +1,5 @@
-import { TzLogger } from '../src/index.js';
+import TzLogger from '../src/index.js';
 import { describe, it, expect } from 'vitest';
-
 const logger = new TzLogger();
 
 describe('logger', () =>

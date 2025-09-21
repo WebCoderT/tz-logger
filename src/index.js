@@ -1,5 +1,5 @@
 // 生气 😤
-export class TzLogger
+class TzLogger
 {
     // 出错配置
     #errorTextColor = "31";
@@ -54,3 +54,5 @@ export class TzLogger
     // 打印信息日志
     infoLogger = this.loggerDefine(this.#infoBgColor)(this.#infoTextColor)(this.#infoIcon)(this.#infoPreText);
 }
+
+export default TzLogger;
