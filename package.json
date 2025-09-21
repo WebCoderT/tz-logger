@@ -20,11 +20,8 @@
     "assets"
   ],
   "scripts": {
-    "build": "vite build",
-    "prepublishOnly": "npm run build && npm test",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:ui": "vitest --ui",
     "test:cov": "vitest run --coverage"
   },
   "devDependencies": {
