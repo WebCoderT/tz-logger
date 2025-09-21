@@ -6,7 +6,7 @@
 # 用法
 ```javascript
 
-import TzLogger from 'tz-logger';
+import { TzLogger } from "tz-logger";
 
 const logger = new TzLogger();
 
