@@ -1,6 +1,6 @@
 {
   "name": "tz-logger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a log package for js",
   "keywords": [
     "log",
