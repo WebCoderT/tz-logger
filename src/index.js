@@ -1,5 +1,5 @@
 // 生气 😤
-export default class TzLogger
+export class TzLogger
 {
     // 出错配置
     #errorTextColor = "31";
