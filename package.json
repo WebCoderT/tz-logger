@@ -11,7 +11,7 @@
   "license": "ISC",
   "author": "zheng",
   "type": "module",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "private": false,
   "repository": "https://github.com/WebCoderT/tz-logger",
@@ -29,5 +29,8 @@
   "devDependencies": {
     "vite": "^7.1.6",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "tz-logger": "^0.0.1"
   }
 }
