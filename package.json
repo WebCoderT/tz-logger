@@ -1,6 +1,6 @@
 {
   "name": "tz-logger",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a log package for js",
   "keywords": [
     "log",
@@ -11,8 +11,23 @@
   "license": "ISC",
   "author": "zheng",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "private": false,
+  "repository": "https://github.com/WebCoderT/tz-logger",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "prepublishOnly": "npm run build && npm test",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:cov": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vite": "^7.1.6",
+    "vitest": "^3.2.4"
   }
 }
