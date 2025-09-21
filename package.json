@@ -30,8 +30,5 @@
   "devDependencies": {
     "vite": "^7.1.6",
     "vitest": "^3.2.4"
-  },
-  "dependencies": {
-    "tz-logger": "^0.0.1"
   }
 }
