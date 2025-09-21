@@ -55,4 +55,4 @@ class TzLogger
     infoLogger = this.loggerDefine(this.#infoBgColor)(this.#infoTextColor)(this.#infoIcon)(this.#infoPreText);
 }
 
-export default { TzLogger };
+export { TzLogger };
