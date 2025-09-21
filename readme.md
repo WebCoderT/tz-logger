@@ -5,7 +5,8 @@
 
 # 用法
 ```javascript
-import TzLogger from "./index.js";
+
+import TzLogger from 'tz-logger';
 
 const logger = new TzLogger();
 

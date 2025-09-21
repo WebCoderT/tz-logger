@@ -6,7 +6,8 @@
     "log",
     "console",
     "logger",
-    "color"
+    "color",
+    "nodejs"
   ],
   "license": "ISC",
   "author": "zheng",
