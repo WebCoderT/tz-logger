@@ -4,8 +4,7 @@ export default defineConfig({
         lib: {
             entry: 'src/index.js',
             name: 'tz-logger',
-            fileName: (fmt) => `index.${fmt}.js`,
-            formats: ['es', 'cjs']
+            fileName: "index"
         }
     }
 });

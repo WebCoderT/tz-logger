@@ -12,8 +12,8 @@
   "license": "ISC",
   "author": "zheng",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
   "private": false,
   "repository": "https://github.com/WebCoderT/tz-logger",
   "files": [
