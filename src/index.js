@@ -1,4 +1,9 @@
+import fs from 'fs';
+
 class LoggerConfig {
+    // 写入文件路径
+    logFilePath = "./logger.txt";
+
     // 出错配置
     errorTextColor = "31";
     errorBgColor = "41";
@@ -36,13 +41,24 @@ class TzLogger extends LoggerConfig {
         return new Date().toLocaleString();
     }
 
+    // 写入文件
+    writeFile(contents) {
+        try {
+            fs.appendFileSync(this.logFilePath, contents + '\n');
+        } catch (error) {
+            throw new Error(error);
+        }
+    }
+
     // 柯里化定义logger
     loggerDefine(bgColor) {
         return function loggerDefineTextColor(textColor) {
             return function loggerDefineIcon(icon) {
                 return function loggerDefinePreText(preText) {
                     return function log(text) {
-                        console.log(icon, `\x1b[${bgColor}m${preText}\x1b[0m`, `\x1b[${textColor}m${text || "未输入日志内容"}\x1b[0m`, `[${this.getTimestamp()}]`);
+                        const contents = [icon, `\x1b[${bgColor}m${preText}\x1b[0m`, `\x1b[${textColor}m${text || "未输入日志内容"}\x1b[0m`, `[${this.getTimestamp()}]`]
+                        console.log(...contents);
+                        this.writeFile(contents);
                     };
                 };
             };
