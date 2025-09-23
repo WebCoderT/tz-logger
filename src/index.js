@@ -31,7 +31,7 @@ class LoggerConfig {
     // 请求配置
     requestTextColor = "36";
     requestBgColor = "46";
-    requestIcon = "🙂";
+    requestIcon = "🙂📨";
     requestPreText = "发送请求日志：";
 }
 
