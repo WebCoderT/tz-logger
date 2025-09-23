@@ -13,19 +13,13 @@
   "author": "zheng",
   "main": "src/index.js",
   "private": false,
-  "repository": "https://github.com/WebCoderT/tz-logger",
   "type": "module",
+  "repository": "https://github.com/WebCoderT/tz-logger",
   "files": [
     "src",
     "assets"
   ],
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:cov": "vitest run --coverage"
-  },
-  "devDependencies": {
-    "vite": "^7.1.6",
-    "vitest": "^3.2.4"
+    "test": "node ./test/index.test.js"
   }
 }
