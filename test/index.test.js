@@ -1,6 +1,6 @@
 import { TzLogger } from '../src/index.js';
-const logger = new TzLogger();
 
+const logger = new TzLogger({ errorPreText: "修改错误前缀提示信息" });
 
 logger.errorLogger("这是错误的日志示例！");
 logger.successLogger("这是成功的日志示例！");

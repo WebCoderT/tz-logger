@@ -33,6 +33,10 @@ class LoggerConfig {
     requestBgColor = "46";
     requestIcon = "🙂📨";
     requestPreText = "发送请求日志：";
+    
+    constructor(config) {
+        Object.assign(this, config);
+    }
 }
 
 class TzLogger extends LoggerConfig {
@@ -79,6 +83,10 @@ class TzLogger extends LoggerConfig {
 
     // 打印请求日志
     requestLogger = this.loggerDefine(this.requestBgColor)(this.requestTextColor)(this.requestIcon)(this.requestPreText);
+
+    constructor(config) {
+        super(config);
+    }
 }
 
 export { TzLogger };
